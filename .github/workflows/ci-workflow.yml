@@ -47,7 +47,7 @@ jobs:
       - name: Upload output file
         uses: actions/upload-artifact@v4
         with:
-          name: output-log-file
+          name: output-log-file-${{ matrix.os }}-${{ matrix.node-version }}
           path: output.log
       # Add here the upload-artifact action
       
